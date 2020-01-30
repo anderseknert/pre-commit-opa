@@ -1,0 +1,6 @@
+- id: opa-test
+  name: OPA test
+  description: Runs OPA unit tests on all rego source files.
+  entry: hooks/opa-test.go
+  language: golang
+  files: (\.rego)$
