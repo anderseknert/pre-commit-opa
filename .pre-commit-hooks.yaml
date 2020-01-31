@@ -1,9 +1,9 @@
-# - id: opa-fmt
-#   name: OPA test
-#   description: Runs OPA unit tests on all rego source files.
-#   entry: hooks/opa-test.py
-#   language: python
-#   files: (.*)  #(\.rego)$
+- id: opa-test
+  name: OPA test
+  description: Runs OPA unit tests on all rego source files.
+  entry: opa-test.py
+  language: python
+  files: (\.rego)$
 
 - id: opa-fmt
   name: OPA fmt
