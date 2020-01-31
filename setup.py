@@ -1,4 +1,3 @@
-from setuptools import find_packages
 from setuptools import setup
 
 setup(
@@ -18,13 +17,15 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy',
     ],
 
-    packages=find_packages(exclude=('tests*', 'testing*')),
+    packages=[
+        'pre_commit_hooks',
+    ],
+
     install_requires=[
         'setuptools-git-version',
+    ],
+
+    scripts=[
+        'pre_commit_hooks/opa-test.py',
     ]
-    # entry_points={
-    #     'console_scripts': [
-    #         'terraform_docs_replace = pre_commit_hooks.terraform_docs_replace:main',
-    #     ],
-    # },
 )
