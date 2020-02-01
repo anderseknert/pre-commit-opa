@@ -1,13 +1,13 @@
 - id: opa-test
   name: OPA test
-  description: Runs OPA unit tests on all rego source files.
+  description: Runs OPA unit tests on all rego source files
   entry: opa-test.py
   language: python
-  files: (\.rego)$
+  files: (\.rego|\.json)$
 
 - id: opa-fmt
   name: OPA fmt
   description: Formats Rego policy using opa fmt
-  entry: opa-fmt.sh
-  language: script
+  entry: opa-fmt.py
+  language: python
   files: (\.rego)$
