@@ -5,7 +5,7 @@ import sys
 import subprocess
 
 def main():
-    command = ['opa', 'test'] + sys.argv[1:]
+    command = ['opa', 'fmt' "-w"] + sys.argv[1:]
     process = subprocess.Popen(command)
 
     if process:
@@ -16,3 +16,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
