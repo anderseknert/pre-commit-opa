@@ -11,3 +11,16 @@
   entry: opa-fmt.py
   language: python
   files: (\.rego)$
+
+- id: opa-check
+  name: OPA check
+  description: Check syntax of staged Rego files
+  entry: opa-check.py
+  language: python
+  files: (\.rego)$
+
+- id: opa-eval
+  name: OPA eval
+  description: Evaluate any policy using OPA eval as a condition for commiting
+  entry: opa-eval.py
+  language: python
