@@ -28,9 +28,9 @@ setup(
     ],
 
     scripts=[
-        'pre_commit_hooks/opa-check.py',
-        'pre_commit_hooks/opa-eval.py',
-        'pre_commit_hooks/opa-fmt.py',
-        'pre_commit_hooks/opa-test.py',
+        'pre_commit_hooks/opa_check.py',
+        'pre_commit_hooks/opa_eval.py',
+        'pre_commit_hooks/opa_fmt.py',
+        'pre_commit_hooks/opa_test.py',
     ]
 )
