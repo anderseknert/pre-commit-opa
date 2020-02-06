@@ -1,26 +1,26 @@
 - id: opa-test
   name: OPA test
   description: Runs OPA unit tests on all rego source files
-  entry: opa-test.py
+  entry: opa_test.py
   language: python
   files: (\.rego|\.json)$
 
 - id: opa-fmt
   name: OPA fmt
   description: Formats Rego policy using opa fmt
-  entry: opa-fmt.py
+  entry: opa_fmt.py
   language: python
   files: (\.rego)$
 
 - id: opa-check
   name: OPA check
   description: Check syntax of staged Rego files
-  entry: opa-check.py
+  entry: opa_check.py
   language: python
   files: (\.rego)$
 
 - id: opa-eval
   name: OPA eval
   description: Evaluate any policy using OPA eval as a condition for commiting
-  entry: opa-eval.py
+  entry: opa_eval.py
   language: python

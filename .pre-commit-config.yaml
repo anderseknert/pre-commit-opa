@@ -12,3 +12,16 @@ repos:
         - id: name-tests-test
         - id: double-quote-string-fixer
         - id: requirements-txt-fixer
+    - repo: https://github.com/pre-commit/pre-commit
+      rev: v2.0.1
+      hooks:
+        - id: validate_manifest
+    - repo: https://github.com/asottile/pyupgrade
+      rev: v1.26.2
+      hooks:
+        - id: pyupgrade
+          args: [--py36-plus]
+    # - repo: https://gitlab.com/pycqa/flake8
+    #   rev: 3.7.9
+    #   hooks:
+    #     - id: flake8
