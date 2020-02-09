@@ -5,6 +5,7 @@
   language: python
   # OPA test should run with provided args rather than only on changed files
   exclude: (.*)$
+  always_run: true
 
 - id: opa-fmt
   name: OPA fmt
