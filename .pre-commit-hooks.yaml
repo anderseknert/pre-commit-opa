@@ -3,7 +3,8 @@
   description: Runs OPA unit tests on all rego source files
   entry: opa_test.py
   language: python
-  files: (\.rego|\.json)$
+  # OPA test should run with provided args rather than only on changed files
+  exclude: (.*)$
 
 - id: opa-fmt
   name: OPA fmt
