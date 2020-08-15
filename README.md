@@ -23,5 +23,5 @@ Runs `opa fmt` on any rego file about to be commited.
 #### `opa-check`
 Runs `opa check` on any rego file about to be commited.
 
-#### `opa-test
+#### `opa-test`
 If rego files are present in commit, runs `opa test` in git root directory.
