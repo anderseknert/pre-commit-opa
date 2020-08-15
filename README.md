@@ -7,10 +7,10 @@ Pre-commit git hooks for Open Policy Agent (OPA) and Rego development
 Add this to your `.pre-commit-config.yaml`
 
 ```yaml
--   repo: https://github.com/anderseknert/pre-commit-opa
-    rev: v1.0.0
-    hooks:
-    - id: opa-fmt
-    - id: opa-check
-    - id: opa-test
+- repo: https://github.com/anderseknert/pre-commit-opa
+  rev: v1.0.0
+  hooks:
+  - id: opa-fmt
+  - id: opa-check
+  - id: opa-test
 ```
