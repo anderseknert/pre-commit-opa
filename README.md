@@ -1,5 +1,7 @@
 # pre-commit-opa
 
+![Python application](https://github.com/anderseknert/pre-commit-opa/workflows/build/badge.svg)
+
 Pre-commit git hooks for Open Policy Agent (OPA) and Rego development
 
 ### Using pre-commit-opa with pre-commit
