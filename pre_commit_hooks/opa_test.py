@@ -6,14 +6,15 @@ import subprocess
 
 
 def main():
-    """Runs 'opa test' in git root directory or one provided in args"""
-    print(sys.argv)
+    """Runs 'opa test' in git root directory"""
     process = subprocess.run(
-        ['opa', 'test'] + sys.argv[1:], capture_output=True
+        ['opa', 'test', '.'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT
     )
 
     if process.returncode > 0:
-        sys.exit(process.stderr.decode('utf-8'))
+        message = process.stdout.decode('utf-8')
+
+        sys.exit(message)
 
 
 if __name__ == '__main__':

@@ -3,9 +3,7 @@
   description: Runs OPA unit tests on all rego source files
   entry: opa_test.py
   language: python
-  # OPA test should run with provided args rather than only on changed files
-  exclude: (.*)$
-  always_run: true
+  files: (\.rego)$
 
 - id: opa-fmt
   name: OPA fmt
@@ -20,9 +18,3 @@
   entry: opa_check.py
   language: python
   files: (\.rego)$
-
-- id: opa-eval
-  name: OPA eval
-  description: Evaluate any policy using OPA eval as a condition for commiting
-  entry: opa_eval.py
-  language: python
