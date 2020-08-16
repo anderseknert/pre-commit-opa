@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.1.0] - 2020-08-16
+### Changed
+- Use "system" style hooks rather than python ones as we don't need custom logic yet.
+
 ## [1.0.0] - 2020-08-16
 ### Changed
 - First release, adding pre-commit checks with `opa fmt`, `opa check` and `opa test`

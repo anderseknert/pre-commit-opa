@@ -10,7 +10,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/anderseknert/pre-commit-opa
-  rev: v1.0.0
+  rev: v1.1.0
   hooks:
   - id: opa-fmt
   - id: opa-check
