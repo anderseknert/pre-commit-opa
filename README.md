@@ -27,3 +27,9 @@ Runs `opa check` on any rego file about to be commited.
 
 #### `opa-test`
 If rego files are present in commit, runs `opa test` in git root directory.
+
+### `conftest-test`
+Runs `conftest test` on any configuration file format supported by conftest.
+
+### `conftest-verify`
+If rego files are present in commit, runs `conftest verify` in git root directory.
