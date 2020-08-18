@@ -19,7 +19,7 @@ Add the `pre-commit-opa` repo to the `.pre-commit-config.yaml` file in your git 
   - id: conftest-verify
 ```
 
-Once saved, run `pre-commit install` to instal git pre-commit hooks.
+Once saved, run `pre-commit install` to install git pre-commit hooks.
 
 ### Hooks available
 
