@@ -4,6 +4,8 @@
 
 [Pre-commit](https://pre-commit.com/) git hooks for Open Policy Agent (OPA) and Rego development
 
+<img src="assets/pre-commit.svg" width=100><img src="assets/opa.png" width=100>
+
 ### Using pre-commit-opa with pre-commit
 
 Add the `pre-commit-opa` repo to the `.pre-commit-config.yaml` file in your git root directory, and add any number of the available hooks:
