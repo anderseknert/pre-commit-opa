@@ -4,7 +4,7 @@
 
 [Pre-commit](https://pre-commit.com/) git hooks for Open Policy Agent (OPA) and Rego development
 
-<img src="assets/pre-commit.svg" width=100><img src="assets/opa.png" width=100>
+<img src="assets/pre-commit.svg" width=150><img src="assets/opa.png" width=150>
 
 ### Using pre-commit-opa with pre-commit
 
