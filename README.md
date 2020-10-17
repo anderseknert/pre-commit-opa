@@ -11,6 +11,7 @@
 Add the `pre-commit-opa` repo to the `.pre-commit-config.yaml` file in your git root directory, and add any number of the available hooks:
 
 ```yaml
+repos:
 - repo: https://github.com/anderseknert/pre-commit-opa
   rev: v1.3.0
   hooks:
