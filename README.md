@@ -42,7 +42,6 @@ Since it doesn't make sense to only provide `opa test` with the files changed (a
 ```yaml
 - id: opa-test
   args: ['my/policies', 'my/other/policies/']
-  pass_filenames: false
 ```
 
 #### `conftest-test`
@@ -54,7 +53,6 @@ Just like with `opa-test` you'll likely want to specify the location of your con
 - id: conftest-test
   args: ['--policy', 'conftest/policy']
   files: conftest/.*\.yaml$
-  pass_filenames: false
 ```
 
 #### `conftest-verify`
