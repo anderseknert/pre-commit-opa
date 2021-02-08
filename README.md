@@ -13,7 +13,7 @@ Add the `pre-commit-opa` repo to the `.pre-commit-config.yaml` file in your git 
 ```yaml
 repos:
 - repo: https://github.com/anderseknert/pre-commit-opa
-  rev: v1.3.0
+  rev: v1.4.0
   hooks:
   - id: opa-fmt
   - id: opa-check
