@@ -13,7 +13,7 @@ Add the `pre-commit-opa` repo to the `.pre-commit-config.yaml` file in your git 
 ```yaml
 repos:
 - repo: https://github.com/anderseknert/pre-commit-opa
-  rev: v1.4.0
+  rev: v1.4.1
   hooks:
   - id: opa-fmt
   - id: opa-check
@@ -27,12 +27,12 @@ Once saved, run `pre-commit install` to install git pre-commit hooks.
 ### Hooks available
 
 #### `opa-fmt`
-Runs `opa fmt` on any rego file about to be commited.
+Runs `opa fmt` on any rego files in the repository.
 
 Note that any files changed by this hook will need to be re-added (`git add`) to be included in the commit.
 
 #### `opa-check`
-Runs `opa check` on any rego file about to be commited.
+Runs `opa check` on any rego files in the repository.
 
 #### `opa-test`
 If rego files are present in commit, runs `opa test` in git root directory.
