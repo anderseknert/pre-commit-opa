@@ -31,6 +31,14 @@
   language: system
   files: (\.rego|\.yml|\.yaml|\.json|\.ini|\.toml|\.conf|\.hcl|\.cue|\.edn|\.vcl|\.xml|\.jsonnet|Dockerfile)$
 
+- id: conftest-fmt
+  name: Conftest fmt
+  description: Run `conftest fmt` on staged Rego files
+  entry: conftest fmt
+  language: system
+  args: ['.']
+  files: (\.rego)$
+
 - id: conftest-verify
   name: Conftest verify
   description: Run `conftest verify` on rego files
