@@ -44,6 +44,11 @@ Since it doesn't make sense to only provide `opa test` with the files changed (a
   args: ['my/policies', 'my/other/policies/']
 ```
 
+#### `conftest-fmt`
+Runs `conftest fmt` on any Rego files in the repository.
+
+Note that any files changed by this hook will need to be re-added (`git add`) to be included in the commit.
+
 #### `conftest-test`
 Runs `conftest test` on any configuration file format supported by conftest.
 
@@ -57,3 +62,11 @@ Just like with `opa-test` you'll likely want to specify the location of your con
 
 #### `conftest-verify`
 If rego files are present in commit, runs `conftest verify` in git root directory.
+
+Just like with `conftest-test` you'll likely want to specify the location of your conftest policies, and possibly what type of files changed should trigger the hook:
+
+```yaml
+- id: conftest-verify
+  args: ['--policy', 'conftest/policy']
+  files: conftest/.*\.yaml$
+```
