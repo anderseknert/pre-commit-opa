@@ -19,7 +19,7 @@
   name: OPA check
   description: Check syntax of staged Rego files
   entry: opa check
-  args: ['.']
+  args: ['.', '--strict']
   pass_filenames: false
   language: system
   files: (\.rego)$
