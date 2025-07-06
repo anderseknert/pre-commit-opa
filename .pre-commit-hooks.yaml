@@ -36,14 +36,12 @@
   description: Run `conftest fmt` on staged Rego files
   entry: conftest fmt
   language: system
-  args: ['.']
   files: (\.rego)$
 
 - id: conftest-verify
   name: Conftest verify
   description: Run `conftest verify` on rego files
   entry: conftest verify
-  args: ['.']
   pass_filenames: false
   language: system
   files: (\.rego)$
